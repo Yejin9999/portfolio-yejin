@@ -1,0 +1,325 @@
+body {}
+header {
+    width:1920px; height:74px;
+    padding:20px 80px;
+    animation:opacity 2s 0.5s both;
+}
+header nav {text-align:right; transition:transform 1s;}
+header nav a {
+    margin-right:50px;
+    font-size:1.06rem; font-weight:500;
+    transition:transform 0.5s ease;
+}
+header nav a:last-child {margin:0;}
+header nav a:hover {
+    color:#244B86;
+    padding-bottom:8px; border-bottom:2px solid #244B86;
+    transform:scale(1.2)
+}
+header nav .active {}
+
+@keyframes opacity {
+    0%{opacity:0;}
+    100%{opacity:1;}
+}
+/* ===============================================================================헤더끝======= */
+.info_bg {
+    width:100%;
+    background-image:url(../images/bg.jpg);
+    background-position:center;
+    background-size:cover;
+    height:100vh;
+}
+
+.ball_wrap { position:relative;
+    width:100%; height:100vh;
+    overflow:hidden;
+}
+.ball-animation {
+    --down:1.045;
+    --distance:1.5;
+    width:60px; height:60px;
+    position:absolute; top:0; right:0;
+    animation:bouncing-ball 2s linear both;
+}
+.ball-decoration { width: 100%; height: 100%; background:#244B86; border-radius:50%;}
+
+@keyframes bouncing-ball {
+    0% {top: calc(0 * var(--down)); right: calc(0 * var(--distance));}
+    3% {top: calc(15px * var(--down)); right: calc(50px * var(--distance));}
+    6% {top: calc(50px * var(--down)); right: calc(105px * var(--distance));}
+    9% {top: calc(130px * var(--down)); right: calc(175px * var(--distance));}
+    12% {top: calc(250px * var(--down)); right: calc(235px * var(--distance));}
+    15% {top: calc(410px * var(--down)); right: calc(280px * var(--distance));}
+    18% {top: calc(490px * var(--down)); right: calc(295px * var(--distance));}
+    21% {top: calc(370px * var(--down)); right: calc(310px * var(--distance));}
+    24% {top: calc(275px * var(--down)); right: calc(330px * var(--distance));}
+    27% {top: calc(205px * var(--down)); right: calc(355px * var(--distance));}
+    30% {top: calc(170px * var(--down)); right: calc(388px * var(--distance));}
+    33% {top: calc(150px * var(--down)); right: calc(415px * var(--distance));}
+    36% {top: calc(170px * var(--down)); right: calc(450px * var(--distance));}
+    39% {top: calc(210px * var(--down)); right: calc(480px * var(--distance));}
+    42% {top: calc(290px * var(--down)); right: calc(520px * var(--distance));}
+    45% {top: calc(415px * var(--down)); right: calc(545px * var(--distance));}
+    48% {top: calc(490px * var(--down)); right: calc(560px * var(--distance));}
+    51% {top: calc(400px * var(--down)); right: calc(565px * var(--distance));}
+    54% {top: calc(340px * var(--down)); right: calc(585px * var(--distance));}
+    57% {top: calc(310px * var(--down)); right: calc(605px * var(--distance));}
+    60% {top: calc(295px * var(--down)); right: calc(635px * var(--distance));}
+    63% {top: calc(310px * var(--down)); right: calc(665px * var(--distance));}
+    66% {top: calc(340px * var(--down)); right: calc(685px * var(--distance));}
+    69% {top: calc(420px * var(--down)); right: calc(710px * var(--distance));}
+    72% {top: calc(490px * var(--down)); right: calc(725px * var(--distance));}
+    75% {top: calc(440px * var(--down)); right: calc(732px * var(--distance));}
+    78% {top: calc(415px * var(--down)); right: calc(740px * var(--distance));}
+    81% {top: calc(395px * var(--down)); right: calc(760px * var(--distance));}
+    84% {top: calc(415px * var(--down)); right: calc(775px * var(--distance));}
+    87% {top: calc(450px * var(--down)); right: calc(790px * var(--distance));}
+    90% {top: calc(490px * var(--down)); right: calc(800px * var(--distance));}
+    93% {top: calc(490px * var(--down)); right: calc(820px * var(--distance));transform:scale(1);}
+    100% {top: calc(490px * var(--down)); right: calc(850px * var(--distance)); transform:scale(0.5);}
+}
+.info_bg  .info_wrap {
+    width:1760px; margin:0 auto; overflow:hidden;
+    
+}
+/* HTML: <div class="loader"></div> */
+.loader p em {
+    width: fit-content;
+    font-family: system-ui,sans-serif;
+    font-weight: bold;
+    font-size:1.13rem; letter-spacing:-0.02rem;
+    text-transform:uppercase;
+    color: #0000;
+    -webkit-text-stroke: 1px #244B86;
+    background:
+      radial-gradient(1.13em at 50% 1.6em,#fff 99%,#244B86 101%) calc(50% - 1.6em) 0/3.2em 100% text,
+      radial-gradient(1.13em at 50% -0.8em,#fff 99%,#244B86 101%) 50% .8em/3.2em 100% repeat-x  text;
+    animation: l9 2s linear infinite;
+  }
+  @keyframes l9 {
+    to {background-position: calc(50% + 1.6em) 0,calc(50% + 3.2em) .8em}
+  }
+
+.info_bg .info_wrap .info_Ltitle {
+    margin-top:244px; 
+}
+.info_bg .info_wrap .info_Ltitle p {
+    font-size:1.13rem; letter-spacing:-0.02rem; color:#244B86;
+}
+.info_bg .info_wrap .info_Ltitle p em {font-size:9.38rem;  font-weight:700;}
+
+.info_bg .info_wrap .info_Rtitle {
+    float:right; text-align:right; width:414px; margin-top:172px;
+    animation:opacity 2s 1.5s both;
+}
+.info_bg .info_wrap .info_Rtitle p {font-size:1.13rem; letter-spacing:-0.02rem; color:#244B86;}
+.info_bg .info_wrap .info_Rtitle p:first-child {
+    font-size:1.56rem;
+    margin-bottom:50px; text-align:left;
+}
+/* ========메인시작============ */
+main {width:1500px; margin:200px auto 0;}
+/* ============about me =============*/
+main .aboutme_wrap {}
+main .aboutme_wrap h2 {font-size:1.38rem; font-weight:400; line-height:1.7;}
+main .aboutme_wrap h2 em {font-size:1.88rem; font-weight:700; line-height:1.7;}
+main .aboutme_wrap h2 span {font-size:1.56rem; font-weight:500; color:#244B86;}
+main .aboutme_wrap .aboutme_contents {
+    display:flex;  align-items:center; justify-content:flex-start;
+}
+/* ==============왼쪽부분====================== */
+main .aboutme_wrap .aboutme_contents .aboutme_left {
+    display:flex; align-items:center; margin-right:250px;
+}
+main .aboutme_wrap .aboutme_contents .aboutme_left p {margin-right:50px;}
+main .aboutme_wrap .aboutme_contents .aboutme_left p img {}
+main .aboutme_wrap .aboutme_contents .aboutme_left .myprofile {}
+main .aboutme_wrap .aboutme_contents .aboutme_left .myprofile h3 {
+    margin-bottom:20px;
+    font-size:1.13rem; font-weight:700; line-height:1.7; letter-spacing:-0.02rem;
+    color:#244B86;
+}
+main .aboutme_wrap .aboutme_contents .aboutme_left .myprofile dl {
+    display:flex;
+    margin-bottom:20px;
+}
+main .aboutme_wrap .aboutme_contents .aboutme_left .myprofile dl dt {
+    margin-right:25px;
+    font-weight:700; line-height:1.7; letter-spacing:-0.02rem;
+}
+main .aboutme_wrap .aboutme_contents .aboutme_left .myprofile dl dd {
+    font-weight:400; line-height:1.7; letter-spacing:-0.02rem;
+}
+main .aboutme_wrap .aboutme_contents .aboutme_left .myprofile dl dd a {}
+/* ===dl 개별선택자==== */
+main .aboutme_wrap .aboutme_contents .aboutme_left .myprofile .name {}
+main .aboutme_wrap .aboutme_contents .aboutme_left .myprofile .birth {}
+main .aboutme_wrap .aboutme_contents .aboutme_left .myprofile .mail {}
+main .aboutme_wrap .aboutme_contents .aboutme_left .myprofile .phone {}
+main .aboutme_wrap .aboutme_contents .aboutme_left .myprofile .github {margin:0;}
+/* =========오른쪽부분======================= */
+main .aboutme_wrap .aboutme_contents .aboutme_right {}
+main .aboutme_wrap .aboutme_contents .aboutme_right * h3 {
+    font-size:1.13rem; font-weight:700; line-height:1.7; letter-spacing:-0.02rem;
+    color:#244B86;
+}
+main .aboutme_wrap .aboutme_contents .aboutme_right * p {
+    font-weight:400; line-height:1.7; letter-spacing:-0.02rem
+}
+/* ======================자격증====================== */
+main .aboutme_wrap .aboutme_contents .aboutme_right .certificate {}
+main .aboutme_wrap .aboutme_contents .aboutme_right .certificate h3 {margin-bottom:15px;}
+main .aboutme_wrap .aboutme_contents .aboutme_right .certificate p {margin-bottom:10px;}
+/* ================경험======================= */
+main .aboutme_wrap .aboutme_contents .aboutme_right .experience_wrap {
+    margin:40px 0;
+}
+main .aboutme_wrap .aboutme_contents .aboutme_right .experience_wrap h3 {margin-bottom:25px;}
+main .aboutme_wrap .aboutme_contents .aboutme_right .experience_wrap .experience {}
+main .aboutme_wrap .aboutme_contents .aboutme_right .experience_wrap .experience .workperiod {
+    display:flex; margin-bottom:10px;
+}
+main .aboutme_wrap .aboutme_contents .aboutme_right .experience_wrap .experience .e6 {margin-bottom:0;}
+main .aboutme_wrap .aboutme_contents .aboutme_right .experience_wrap .experience .workperiod p {}
+main .aboutme_wrap .aboutme_contents .aboutme_right .experience_wrap .experience .workperiod .date {margin-right:15px;}
+main .aboutme_wrap .aboutme_contents .aboutme_right .experience_wrap .experience .workperiod .work {}
+/*============== 스킬 =================*/
+main .aboutme_wrap .aboutme_contents .aboutme_right .skills_wrap {}
+main .aboutme_wrap .aboutme_contents .aboutme_right .skills_wrap h3 {margin-bottom:25px;}
+main .aboutme_wrap .aboutme_contents .aboutme_right .skills_wrap .skills {display:flex;}
+main .aboutme_wrap .aboutme_contents .aboutme_right .skills_wrap .skills p {margin-right:15px;}
+main .aboutme_wrap .aboutme_contents .aboutme_right .skills_wrap .skills p:last-child {margin:0;}
+main .aboutme_wrap .aboutme_contents .aboutme_right .skills_wrap .skills p img {}
+
+/* ====================웹작품 스와이프======================== */
+main * h1 {
+    font-size:6.25rem; font-weight:700; letter-spacing:-0.02rem;
+    color:#244B86; margin-bottom:100px;
+}
+main .webpage_container {margin:200px 0; position:relative;}
+main .webpage_container h1 {}
+main .webpage_container .web_swiper {width:max-content; position:relative;}
+main .webpage_container .web_swiper .swiper-wrapper {width:1260px;}
+main .webpage_container .web_swiper .swiper-wrapper .swiper-slide {
+    display:flex; align-items:center; justify-content:space-between;
+}
+main .webpage_container .web_swiper .swiper-wrapper .swiper-slide p {}
+main .webpage_container .web_swiper .swiper-wrapper .swiper-slide p img {}
+main .webpage_container .web_swiper .swiper-wrapper .swiper-slide .webcontents {}
+main .webpage_container .web_swiper .swiper-wrapper .swiper-slide .webcontents .webname {
+    font-size:1.56rem; font-weight:700; letter-spacing:-0.02rem; line-height:1.7;
+}
+/* ========웹페이지설명====================== */
+main .webpage_container .web_swiper .swiper-wrapper .swiper-slide .webcontents .webdetail {margin:40px 0;}
+main .webpage_container .web_swiper .swiper-wrapper .swiper-slide .webcontents .webdetail .wtitle {
+    font-size:0.94rem; font-weight:500; letter-spacing:-0.02rem; margin-right:30px;
+}
+main .webpage_container .web_swiper .swiper-wrapper .swiper-slide .webcontents .webdetail .wcontents {
+    font-size:0.81rem; letter-spacing:-0.02rem;
+}
+main .webpage_container .web_swiper .swiper-wrapper .swiper-slide .webcontents .webdetail .page {display:flex;}
+main .webpage_container .web_swiper .swiper-wrapper .swiper-slide .webcontents .webdetail .page p {}
+main .webpage_container .web_swiper .swiper-wrapper .swiper-slide .webcontents .webdetail .tool {display:flex; margin:25px 0;}
+main .webpage_container .web_swiper .swiper-wrapper .swiper-slide .webcontents .webdetail .tool p {}
+main .webpage_container .web_swiper .swiper-wrapper .swiper-slide .webcontents .webdetail .totalperiod {display:flex;}
+main .webpage_container .web_swiper .swiper-wrapper .swiper-slide .webcontents .webdetail .totalperiod .wtitle {}
+main .webpage_container .web_swiper .swiper-wrapper .swiper-slide .webcontents .webdetail .totalperiod p {}
+main .webpage_container .web_swiper .swiper-wrapper .swiper-slide .webcontents .orginalsite {
+    font-size:0.81rem; letter-spacing:-0.02rem; 
+    border-bottom:1px solid #244B86; padding-bottom:5px;
+}
+/* ===========주소가기 탭================ */
+main .webpage_container .web_swiper .swiper-wrapper .swiper-slide .webcontents .tab {
+    display:flex; margin-top:40px; 
+}
+main .webpage_container .web_swiper .swiper-wrapper .swiper-slide .webcontents .tab p {
+    background-color:#244B86; padding:10px 13px; text-align:center; border-radius:15px;
+    margin-right:13px;
+}
+main .webpage_container .web_swiper .swiper-wrapper .swiper-slide .webcontents .tab p:last-child {margin:0;}
+main .webpage_container .web_swiper .swiper-wrapper .swiper-slide .webcontents .tab p a {
+    font-size:0.88rem; font-weight:700; letter-spacing:-0.02rem; line-height:1.7; color:#fff;
+}
+
+main .webpage_container .swiper-scrollbtn {position:relative; top:-300px;}
+main .webpage_container .swiper-scrollbtn .prev {}
+main .webpage_container .swiper-scrollbtn .next {position:relative; left:1450px;}
+
+/*=========== 디자인부분 스와이퍼================ */
+main .design_container {}
+
+main .design_container h1 {}
+/* HTML: <div class="loader"></div> */
+main .design_container .loader .designtitle {
+    width: fit-content;
+    font-size: 40px;
+    font-family: system-ui,sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #0000;
+    -webkit-text-stroke: 1px #000;
+    background: 
+      linear-gradient(90deg,#0000 33%,#000 0 67%,#0000 0) 
+      0/300% 100% no-repeat text;
+    animation: l2 3s linear infinite;
+  }
+  @keyframes l2 {
+    0%{background-position:100%}
+  }
+/*====================== sns======================================= */
+main .design_container .sns_container {
+    width:1500px;
+    margin:100px auto 50px;
+}
+main .design_container .sns_container .designtitle {
+    font-size:1.88rem; font-weight:600; letter-spacing:-0.02rem;
+}
+main .design_container .sns_container  .sns {}
+main .design_container .sns_container .sns .swiper-wrapper {transition-timing-function:linear; margin-top:50px;}
+main .design_container .sns_container .sns .swiper-wrapper .s {cursor:pointer;}
+main .design_container .sns_container  .sns .swiper-wrapper .s img {width:100%;}
+/*================= bnr======================================================== */
+main .design_container .bnr_container {}
+main .design_container .bnr_container .designtitle {
+    font-size:1.88rem; font-weight:600; letter-spacing:-0.02rem;
+    margin-bottom:50px;
+}
+main .design_container .bnr_container .bnr {}
+main .design_container .bnr_container .bnr .swiper-wrapper {transition-timing-function:linear;}
+main .design_container .bnr_container .bnr .swiper-wrapper .b {cursor:pointer;}
+main .design_container .bnr_container .bnr .swiper-wrapper .b img {width:100%;}
+
+/* =============detail=========================================================== */
+main .design_container .detail_container {margin-top:100px; text-align:center;}
+main .design_container .detail_container .loader {}
+main .design_container .detail_container .loader .designtitle {
+    font-size:1.88rem; font-weight:600; letter-spacing:-0.02rem;
+    margin-bottom:50px; text-align:center;
+}
+main .design_container .detail_container .detail_wrapper {}
+main .design_container .detail_container .detail_wrapper .detail {}
+main .design_container .detail_container .detail_wrapper .detail .swiper-wrapper {}
+main .design_container .detail_container .detail_wrapper .detail .swiper-wrapper .d {cursor:pointer;}
+main .design_container .detail_container .detail_wrapper .detail .swiper-wrapper .d img {width:100%;}
+/* 팝업 */
+.popup_bg {
+    position:fixed; left:0; top:0;
+    width:100%; height:100vh; z-index:999;
+    background:rgba(0,0,0,0.5);
+}
+.popup_bg .scroll_wrap {
+    height:80vh; overflow:auto;
+    width:700px; margin:80px auto 0;
+}
+.popup_bg .scroll_wrap img {width:100%;}
+
+/* 엔딩인사 */
+main .ending {height:100vh; overflow:hidden; padding-top:450px;}
+main .ending .ending_title {float:right;}
+main .ending .ending_title p {
+    margin-bottom:50px; font-size:1.13rem; 
+    letter-spacing:-0.02rem; color:#244B86;
+}
+main .ending .ending_title p:last-child {margin:0;}
+main .ending .ending_title p em {font-size:9.38rem; color:#244B86; font-weight:700;}

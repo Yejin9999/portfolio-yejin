@@ -4,8 +4,11 @@ header {
     padding:20px 80px;
     animation:opacity 2s 0.5s both;
     position:fixed; left:0; top:0; z-index:999;
+    
 }
-header nav {text-align:right; transition:transform 1s;}
+header nav {
+    text-align:right; transition:transform 1s;
+}
 header nav a {
     margin-right:50px;
     font-size:1.06rem; font-weight:500;
@@ -13,7 +16,7 @@ header nav a {
 }
 header nav a:last-child {margin:0;}
 header nav a:hover {
-    color:#244B86;
+    color:rgb(36, 75, 134);
     padding-bottom:8px; border-bottom:2px solid #244B86;
     transform:scale(1.2)
 }
@@ -231,7 +234,7 @@ main .webpage_container .web_swiper .swiper-wrapper .swiper-slide .webcontents .
     
 }
 main .webpage_container .web_swiper .swiper-wrapper .swiper-slide .webcontents .orginalsite:hover {
-    border-bottom:1px solid #244B86; padding-bottom:5px;
+    border-bottom:2px solid #244B86; padding-bottom:5px;
 }
 /* ===========주소가기 탭================ */
 main .webpage_container .web_swiper .swiper-wrapper .swiper-slide .webcontents .tab {

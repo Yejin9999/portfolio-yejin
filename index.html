@@ -18,13 +18,14 @@
 <body>
     <header>
         <nav>
-            <a href="#" class="active">Info</a>
-            <a href="#">Profile</a>
-            <a href="#">Project</a>
+            <a href="#info" class="active">Info</a>
+            <a href="#profile">Profile</a>
+            <a href="#project">Project</a>
+            <a href="#design">Design</a>
         </nav>
     </header>
     <!-- info부분 -->
-    <div class="info_bg">
+    <div class="info_bg" id="info">
         <div class="info_wrap">
             <div class="ball_wrap">
                 <div class="ball-animation">
@@ -45,7 +46,7 @@
     </div>
     <main>
         <!-- 내소개 -->
-        <div class="aboutme_wrap">
+        <div class="aboutme_wrap" id="profile">
             <h2>안녕하세요.<br><em>항상 겸손함으로 성장해나가는</em><br><span>웹디자이너 안예진</span>입니다.</h2>
             <div class="aboutme_contents">
                 <div class="aboutme_left">
@@ -124,7 +125,7 @@
             </div>
         </div>
         <!-- 웹디자인작품 -->
-        <div class="webpage_container">
+        <div class="webpage_container" id="project">
             <h1>WEB</h1>
             <div class="swiper web_swiper">
                 <div class="swiper-wrapper">
@@ -202,7 +203,7 @@
                             <div class="tab">
                                 <p class="proposal"><a href="#">기획서</a></p>
                                 <p class="githube"><a href="#">GitHube 바로가기</a></p>
-                                <p class="result"><a href="#">프로토타입 (최종결과)</a></p>
+                                <p class="result"><a href="#">프로토타입(최종결과)</a></p>
                             </div>
                         </div>
                     </div>
@@ -240,7 +241,7 @@
             </div>
         </div>
         <!-- 디자인작품(sns,bnr,detail) -->
-        <div class="design_container">
+        <div class="design_container" id="design">
             <h1>DESIGN</h1>
             <!-- ==========sns===================== -->
             <div class="sns_container">

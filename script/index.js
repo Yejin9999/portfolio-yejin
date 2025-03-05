@@ -75,11 +75,13 @@ for(let i of bnr){
 
 for(let i of detail){
     i.addEventListener('click',()=>{
+        console.log(i.title)
         body.style.overflow = 'hidden';
         popup_bg.style.display = 'block'
-        popup_bg.children[0].children[0].src = i.src;
-        popup_bg.children[0].style.width = '1000px';
-        popup_bg.children[0].style.marginTop = '80px';
+        popup_bg.children[0].children[0].src = `./project/design/detail_${i.title}.jpg`;
+        popup_bg.children[0].style.width = '750px';
+        popup_bg.children[0].style.heigh = '900px';
+        popup_bg.children[0].style.marginTop = '30px';
     })
 }
 

@@ -231,10 +231,8 @@ main .webpage_container .web_swiper .swiper-wrapper .swiper-slide .webcontents .
 main .webpage_container .web_swiper .swiper-wrapper .swiper-slide .webcontents .webdetail .totalperiod p {}
 main .webpage_container .web_swiper .swiper-wrapper .swiper-slide .webcontents .orginalsite {
     font-size:0.81rem; letter-spacing:-0.02rem; 
-    
-}
-main .webpage_container .web_swiper .swiper-wrapper .swiper-slide .webcontents .orginalsite:hover {
     border-bottom:2px solid #244B86; padding-bottom:5px;
+    
 }
 /* ===========주소가기 탭================ */
 main .webpage_container .web_swiper .swiper-wrapper .swiper-slide .webcontents .tab {

@@ -1,9 +1,8 @@
 //웹디자인
 const webSlid = new Swiper('.web_swiper',{
     spaceBetween:80,
-    autoplay:{delay:3000,},
+    autoplay:{delay:5000,},
     loop:true,
-    speed:2000,
     navigation: {
         nextEl: ".webpage_container .swiper-scrollbtn .next",
         prevEl: ".webpage_container .swiper-scrollbtn .prev",
@@ -79,7 +78,7 @@ for(let i of detail){
         body.style.overflow = 'hidden';
         popup_bg.style.display = 'block'
         popup_bg.children[0].children[0].src = i.src;
-        popup_bg.children[0].style.width = '800px';
+        popup_bg.children[0].style.width = '1000px';
         popup_bg.children[0].style.marginTop = '80px';
     })
 }

@@ -35,6 +35,10 @@ const detailSlide = new Swiper('.detail',{
     effect:"fade",
     autoplay:{delay:2000,},
     loop:true,
+    navigation: {
+        nextEl: ".detail_container .swiper-scrollbtn .next",
+        prevEl: ".detail_container .swiper-scrollbtn .prev",
+      },
 })
 
 //팝업 출력과 숨기기

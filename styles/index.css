@@ -318,6 +318,11 @@ main .design_container .detail_container .detail_wrapper .detail {}
 main .design_container .detail_container .detail_wrapper .detail .swiper-wrapper {}
 main .design_container .detail_container .detail_wrapper .detail .swiper-wrapper .d {cursor:pointer;}
 main .design_container .detail_container .detail_wrapper .detail .swiper-wrapper .d img {width:100%;}
+
+main .design_container .detail_container .swiper-scrollbtn {position:relative; top:-40px; right:-710px;}
+main .design_container .detail_container .swiper-scrollbtn .prev {}
+main .design_container .detail_container .swiper-scrollbtn .next {}
+
 /* 팝업 */
 .popup_bg {
     position:fixed; left:0; top:0;
